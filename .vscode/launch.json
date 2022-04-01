@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch YagoTobioYLuisBuenoApplication",
+            "request": "launch",
+            "mainClass": "com.example.demo.YagoTobioYLuisBuenoApplication",
+            "projectName": "demo"
+        },
+        {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
