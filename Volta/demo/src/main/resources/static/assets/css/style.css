@@ -543,7 +543,7 @@ section {
 --------------------------------------------------------------*/
 #about {
   width: 100%;
-  height: 50vh;
+  height: 55vh;
   background: #000000;
 }
 .about .content h3 {
@@ -973,7 +973,7 @@ section {
 --------------------------------------------------------------*/
 #team {
   width: 100%;
-  height: 90vh;
+  height: 110vh;
   background: #000000;
 }
 #team.body {
@@ -1613,5 +1613,124 @@ section {
   }
   #footer .credits {
     padding-top: 4px;
+  }
+}
+
+/*--------------------------------------------------------------
+# hero2 Section
+--------------------------------------------------------------*/
+#hero2 {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+#hero2 .container {
+  padding-top: 72px;
+}
+#hero2 h1 {
+  margin: 0 0 0 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #f9f7f3;
+}
+#hero2 h2 {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 50px;
+  font-size: 24px;
+}
+#hero2 .btn-get-started {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  color: #f9f7f3;
+  background: #008028;
+}
+#hero2 .btn-get-started:hover {
+  background: #0fee55;
+}
+#hero2 .btn-watch-video {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  margin: 10px 0 0 25px;
+  color: #f9f7f3;
+  line-height: 1;
+}
+#hero2 .btn-watch-video i {
+  line-height: 0;
+  color: #f9f7f3;
+  font-size: 32px;
+  transition: 0.3s;
+  margin-right: 8px;
+}
+#hero2 .btn-watch-video:hover i {
+  color: #0fee55;
+}
+#hero2 .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@media (max-width: 991px) {
+  #hero2 {
+    height: 100vh;
+    text-align: center;
+  }
+  #hero2 .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #hero2 .hero2-img {
+    text-align: center;
+  }
+  #hero2 .hero2-img img {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #hero2 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero2 .hero2-img img {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  #hero2 .hero2-img img {
+    width: 80%;
+  }
+  #hero2 .btn-get-started {
+    font-size: 16px;
+    padding: 10px 24px 11px 24px;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
